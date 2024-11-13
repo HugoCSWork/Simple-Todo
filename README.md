@@ -1,6 +1,6 @@
 # simple_todo
 
-Basic application to create todos that get stored in local storage.
+Basic todo application.
 
 Design - [URL](https://www.figma.com/design/7FOTY5MyUNOnz7WlVunTpM/Todo-Mobile-App-(Community)-(Community)?node-id=1-2369&node-type=frame&t=g6crgyYjPvsdemla-0)
 
@@ -14,6 +14,7 @@ This project uses a feature-based architecture, where each feature is encapsulat
 * [X] Update
 * [X] Get All 
 * [X] Delete
+* [X] Local Storage
 * [ ] Notifications
 * [ ] Authentication  
 * [ ] Revenuecat
