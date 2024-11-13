@@ -41,11 +41,22 @@ class TaskDetailsPage extends HookConsumerWidget {
             title: const Text('Task Details', style: TextStyle(color: Colors.white)),
             centerTitle: true,
             actions: [
+              if (!taskDetailsModel.existingTask.completed)
+                InkWell(
+                  onTap: () => disabled.value = !disabled.value,
+                  child: const Padding(
+                    padding: EdgeInsets.only(right: 24),
+                    child: Icon(Icons.edit, color: Colors.white, size: 24),
+                  ),
+                ),
               InkWell(
-                onTap: () => disabled.value = !disabled.value,
+                onTap: () {
+                  ref.read(deleteTodoProvider(taskDetailsModel.existingTask.id).future);
+                  context.pop();
+                },
                 child: const Padding(
                   padding: EdgeInsets.only(right: 16),
-                  child: Icon(Icons.edit, color: Colors.white, size: 24),
+                  child: Icon(Icons.delete, color: Colors.white, size: 24),
                 ),
               ),
             ],

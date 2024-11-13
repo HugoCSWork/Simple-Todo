@@ -20,9 +20,7 @@ class Todo extends ConsumerWidget {
           children: [
             Expanded(
               child: InkWell(
-                onTap: todo.completed
-                    ? null
-                    : () => context.pushNamed(RoutePaths.details, pathParameters: {"id": todo.id.toString()}),
+                onTap: () => context.pushNamed(RoutePaths.details, pathParameters: {"id": todo.id.toString()}),
                 child: Row(
                   children: [
                     Opacity(

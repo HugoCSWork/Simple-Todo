@@ -1,16 +1,30 @@
 # simple_todo
 
-A new Flutter project.
+Basic application to create todos that get stored in local storage.
 
-## Getting Started
+Design - [URL](https://www.figma.com/design/7FOTY5MyUNOnz7WlVunTpM/Todo-Mobile-App-(Community)-(Community)?node-id=1-2369&node-type=frame&t=g6crgyYjPvsdemla-0)
 
-This project is a starting point for a Flutter application.
+## Project Structure
 
-A few resources to get you started if this is your first Flutter project:
+This project uses a feature-based architecture, where each feature is encapsulated within its own folder, keeping all related logic in a single place.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Features
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+* [X] Create
+* [X] Update
+* [X] Get All 
+* [X] Delete
+* [ ] Notifications
+* [ ] Authentication  
+* [ ] Revenuecat
+* [ ] Sync to Cloud
+
+## Testing : TODO
+
+## Packages
+
+* **Riverpod** - State management
+* **Flutter Hooks** - For form state 
+* **Drift Packages** - Handle SQLite Local Storage
+* **Form Builder Validator** - Simple form validation
+* **Go Router** - Routing and authentication redirection

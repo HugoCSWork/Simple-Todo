@@ -32,3 +32,9 @@ final updateTodoByFormProvider = FutureProvider.autoDispose.family<void, TaskDet
         ),
       );
 });
+
+final deleteTodoProvider = FutureProvider.autoDispose.family<void, int>((ref, id) async {
+  final db = ref.read(databaseProvider);
+
+  await (db.delete(db.dBTasks)..where((task) => task.id.equals(id))).go();
+});
