@@ -20,12 +20,14 @@ This project uses a feature-based architecture, where each feature is encapsulat
 * [ ] Revenuecat
 * [ ] Sync to Cloud
 
-## Testing : TODO
+## Testing 
+
+| TODO
 
 ## Packages
 
 * **Riverpod** - State management
-* **Flutter Hooks** - For form state 
-* **Drift Packages** - Handle SQLite Local Storage
-* **Form Builder Validator** - Simple form validation
-* **Go Router** - Routing and authentication redirection
+* **Flutter Hooks** - Form state 
+* **Drift Packages** - SQLite Local Storage
+* **Form Builder Validator** - Form validation
+* **Go Router** - Routing 
